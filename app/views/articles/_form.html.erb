@@ -8,17 +8,19 @@
 <% end %>
 
 <%= form_with model: @article do |f| %>
-  <p>
-    <%= f.label :title %><br/>
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :description %><br/>
-    <%= f.text_area :description %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
+  <div class="form-floating">
+    <%= f.text_field :title, class: "form-control", id: "floatingInput", placeholder: "Title of article", autofocus: true  %>
+    <%= f.label :title %>
+  </div> <br>
+  <div class="form-floating">
+    <%= f.text_area :description, class: "form-control", id: "floatingTextarea", placeholder: "Body of article" %>
+    <%= f.label :description %>
+  </div> <br>
+
+  <%= f.submit class: "btn btn-primary btn-lg" %>
+
 
 <% end %>
+<div class="center">
 <%= link_to "Back to articles listing", articles_path %>
+</div>

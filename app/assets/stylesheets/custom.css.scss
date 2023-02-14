@@ -1,8 +1,7 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
-$navbar-default-bg: DodgerBlue;
+/*$navbar-default-bg: DodgerBlue;*/
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
+
 
 #logo {
   float: left;
@@ -34,4 +33,8 @@ footer small {
 footer ul {
   float: right;
   list-style: none;
+}
+#floatingTextarea {
+  height: 200px;
+  width: 100%;
 }
