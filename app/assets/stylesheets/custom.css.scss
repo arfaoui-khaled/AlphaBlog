@@ -34,7 +34,18 @@ footer ul {
   float: right;
   list-style: none;
 }
-#floatingTextarea {
-  height: 200px;
-  width: 100%;
+
+.list-group {
+  color: #B00100;
+  margin-left: 60px;
+  padding-left: 240px;
+
+}
+
+.error_container {
+  color: #B00100;
+  width: 75%;
+  margin-left: 60px;
+  padding-left: 40px;
+
 }
