@@ -1,20 +1,4 @@
 <h1 class="center">Sign up for Alpha Blog</h1>
 <%= render "shared/errors", obj: @user %>
 
-<%= form_with model: @user do |f| %>
-  <div class="form-floating">
-    <%= f.text_field :username, class: "form-control", id: "floatingInput", placeholder: "Enter Username", autofocus: true  %>
-    <%= f.label :username %>
-  </div> <br>
-  <div class="form-floating">
-    <%= f.email_field :email, class: "form-control", id: "floatingTextarea2", placeholder: "Enter Email"%>
-    <%= f.label :email %>
-  </div> <br>
-  <div class="form-floating">
-    <%= f.password_field :password, class: "form-control", id: "floatingTextarea2", placeholder: "Enter Password" %>
-    <%= f.label :password %>
-  </div> <br>
-  <%= f.submit "Sign up", class: "btn btn-primary btn-lg" %>
-
-
-<% end %>
+<%= render 'form' %>
