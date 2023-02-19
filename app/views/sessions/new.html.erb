@@ -1,0 +1,16 @@
+<h1 class="center">Login</h1>
+
+<%= form_with scope: :session, url: login_path, method: :post do |f| %>
+
+  <div class="form-floating">
+    <%= f.email_field :email, class: "form-control", id: "floatingInput", placeholder: "Enter Email", autofocus: true%>
+    <%= f.label :email %>
+  </div> <br>
+  <div class="form-floating">
+    <%= f.password_field :password, class: "form-control", id: "floatingInput", placeholder: "Enter Password", autocomplete: "off" %>
+    <%= f.label :password %>
+  </div> <br>
+
+  <%= f.submit "Log in", class: "btn btn-primary btn-lg" %>
+
+<% end %>
