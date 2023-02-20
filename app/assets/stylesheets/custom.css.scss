@@ -15,9 +15,7 @@
   text-decoration: none;
 }
 .center {text-align: center;}
-.jumbotron {
 
-}
 .article-meta-details {
   border-top: 1px solid #eaeaea;
   margin_top: 15px;
@@ -51,16 +49,16 @@ footer ul {
   color: #B00100;
   margin-left: 60px;
   padding-left: 240px;
-
 }
 
-.error_container {
+/*.error_container {
   color: #B00100;
   width: 75%;
   margin-left: 60px;
   padding-left: 40px;
+  text-align-all: center;
 
-}
+}*/
 /*.card-title {
   font-weight: bold;
   font-size: 1.4em;
@@ -77,7 +75,7 @@ footer ul {
   text-decoration: none;
 }
 .listing {
-  list-style-type: none;
+  list-style: none;
   padding-left: 0;
 }
 
