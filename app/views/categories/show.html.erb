@@ -1,5 +1,18 @@
 
 <h1 class="center"> <%= "Category: " + @category.name %></h1>
+
+<% if logged_in? && current_user.admin? %>
+
+<div class="center">
+  <div class="row">
+
+<span><%= link_to "Edit Category Name", edit_category_path(@category), class:  "badge text-bg-warning" %></span>
+
+  </div>
+</div>
+
+  <% end %>
+
 <div class="row">
   <div class="col-sm-2 offset-sm-5 center">
     <div class="center">
