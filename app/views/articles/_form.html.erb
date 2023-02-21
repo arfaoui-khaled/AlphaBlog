@@ -10,8 +10,14 @@
     <%= f.label :description %>
   </div> <br>
 
-  <%= f.submit class: "btn btn-primary btn-lg" %>
+  <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |cb| %>
+    <div class="form-check form-check-inline">
+      <%= cb.label(class: "form-check-label") { cb.check_box(class: "form-check-input") +  cb.text } %>
+    </div>
+  <% end %>
+  <br><br>
 
+  <%= f.submit class: "btn btn-primary btn-lg" %>
 
 <% end %>
 <div class="center">
